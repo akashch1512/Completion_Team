@@ -167,35 +167,56 @@
         }
 
         /* Introduction Section */
-        .intro-section {
-            padding: 40px 20px;
-            text-align: center;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+.intro-section {
+    padding: 4rem 2rem; /* More scalable spacing */
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-        .intro-section h2 {
-            font-size: 42px;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            /* font-family: 'Patrick Hand', cursive; Handwritten font */
-            font-weight: 400;
-            line-height: 1.2;
-        }
+.intro-section h2 {
+    font-size: 2.6rem; /* Scales better than px */
+    color: var(--primary-color);
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    line-height: 1.2;
+    display: inline-block;
+    /* border-bottom: 3px double var(--primary-color); Double underline */
+    padding-bottom: 0.5rem;
+    max-width: 90%;
+}
 
-        .intro-section p {
-            font-size: 26px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            font-family: 'Patrick Hand', cursive; /* Handwritten font */
-            font-weight: 400;
-            color: var(--text-dark);
-        }
+/* Paragraph Styling */
+.intro-section p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+    color: var(--text-dark);
+}
 
-        .intro-section .highlight {
-            color: var(--accent-color);
-            font-weight: 600;
-        }
+/* Highlighted Text */
+.intro-section .highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .intro-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .intro-section h2 {
+        font-size: 2.2rem;
+        max-width: 100%;
+    }
+
+    .intro-section p {
+        font-size: 1.4rem;
+    }
+}
+
 
         /* Scroll Down Animation */
         .scroll-down {
@@ -265,8 +286,7 @@
     <div class="intro-section">
         <h2>Welcome to Easy Note Hub!</h2>
         <p>
-            <span class="highlight">Easy Note Hub</span> is your go-to platform for hassle-free academic support.  
-            From assignments and sheet drawings to projects and high-quality notes, we provide everything you need to excel in your studies.  
+            <span class="highlight">Easy Note Hub</span> is for assignments and sheet drawings to projects and high-quality notes.
         </p>
         <p>
             <span class="highlight">How It Works:</span> Click the <span class="highlight">"Get Service"</span> button, and you'll be redirected to our Instagram.  
